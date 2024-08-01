@@ -1,0 +1,17 @@
+{
+  "name": "bug-vite-hashchar",
+  "version": "1.0.0",
+  "description": "show a vite bug when http dependencies are installed via pnpm@9",
+  "main": "main.js",
+  "dependencies": {
+    "instrumenpoche": "git+https://git.sesamath.net/sesamath/instrumenpoche.git"
+  },
+  "devDependencies": {
+    "vite": "^5.3.5"
+  },
+  "scripts": {
+    "test:ko": "test.sh 9",
+    "test:ok": "test.sh 8"
+  },
+  "license": "ISC"
+}
