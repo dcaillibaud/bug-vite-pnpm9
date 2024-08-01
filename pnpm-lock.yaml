@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      instrumenpoche:
-        specifier: git+https://git.sesamath.net/sesamath/instrumenpoche.git
-        version: git+https://git.sesamath.net/sesamath/instrumenpoche.git#26796a8b1fab14a77a463309abdb887baf3678bd
+      sesajs-date:
+        specifier: git+https://forge.apps.education.fr/sesamath/sesajs-date.git
+        version: git+https://forge.apps.education.fr/sesamath/sesajs-date.git#556abdc1857e94091043a7e8dbde139041dc5f93
     devDependencies:
       vite:
         specifier: ^5.3.5
@@ -239,12 +239,6 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  core-js@3.37.1:
-    resolution: {integrity: sha512-Xn6qmxrQZyB0FFY8E3bgRXei3lWDJHhvI+u0q9TKIYM49G8pAr0FgnnrFRAmsbptZL1yxRADVXn+x5AGsbBfyw==}
-
-  docdash@1.2.0:
-    resolution: {integrity: sha512-IYZbgYthPTspgqYeciRJNPhSwL51yer7HAwDXhF5p+H7mTDbPvY3PCk/QDjNxdPCpWkaJVFC4t7iCNB/t9E5Kw==}
-
   esbuild@0.21.5:
     resolution: {integrity: sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw==}
     engines: {node: '>=12'}
@@ -254,14 +248,6 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
-
-  instrumenpoche@git+https://git.sesamath.net/sesamath/instrumenpoche.git#26796a8b1fab14a77a463309abdb887baf3678bd:
-    resolution: {commit: 26796a8b1fab14a77a463309abdb887baf3678bd, repo: https://git.sesamath.net/sesamath/instrumenpoche.git, type: git}
-    version: 2.4.5
-    engines: {node: '>8.0.0'}
-
-  lodash.isequal@4.5.0:
-    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
@@ -280,9 +266,9 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  sesajstools@git+https://git.sesamath.net/sesamath/sesajstools.git#8d33b8b9a594cb4e1baed3a40ae63118febddec5:
-    resolution: {commit: 8d33b8b9a594cb4e1baed3a40ae63118febddec5, repo: https://git.sesamath.net/sesamath/sesajstools.git, type: git}
-    version: 1.1.0
+  sesajs-date@git+https://forge.apps.education.fr/sesamath/sesajs-date.git#556abdc1857e94091043a7e8dbde139041dc5f93:
+    resolution: {commit: 556abdc1857e94091043a7e8dbde139041dc5f93, repo: https://forge.apps.education.fr/sesamath/sesajs-date.git, type: git}
+    version: 1.3.0
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -315,9 +301,6 @@ packages:
         optional: true
       terser:
         optional: true
-
-  whatwg-fetch@3.6.20:
-    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
 
 snapshots:
 
@@ -440,10 +423,6 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  core-js@3.37.1: {}
-
-  docdash@1.2.0: {}
-
   esbuild@0.21.5:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.21.5
@@ -472,15 +451,6 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
-
-  instrumenpoche@git+https://git.sesamath.net/sesamath/instrumenpoche.git#26796a8b1fab14a77a463309abdb887baf3678bd:
-    dependencies:
-      core-js: 3.37.1
-      docdash: 1.2.0
-      sesajstools: git+https://git.sesamath.net/sesamath/sesajstools.git#8d33b8b9a594cb4e1baed3a40ae63118febddec5
-      whatwg-fetch: 3.6.20
-
-  lodash.isequal@4.5.0: {}
 
   nanoid@3.3.7: {}
 
@@ -514,9 +484,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.19.2
       fsevents: 2.3.3
 
-  sesajstools@git+https://git.sesamath.net/sesamath/sesajstools.git#8d33b8b9a594cb4e1baed3a40ae63118febddec5:
-    dependencies:
-      lodash.isequal: 4.5.0
+  sesajs-date@git+https://forge.apps.education.fr/sesamath/sesajs-date.git#556abdc1857e94091043a7e8dbde139041dc5f93: {}
 
   source-map-js@1.2.0: {}
 
@@ -527,5 +495,3 @@ snapshots:
       rollup: 4.19.2
     optionalDependencies:
       fsevents: 2.3.3
-
-  whatwg-fetch@3.6.20: {}

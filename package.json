@@ -4,7 +4,7 @@
   "description": "show a vite bug when http dependencies are installed via pnpm@9",
   "main": "main.js",
   "dependencies": {
-    "instrumenpoche": "git+https://git.sesamath.net/sesamath/instrumenpoche.git"
+    "sesajs-date": "git+https://forge.apps.education.fr/sesamath/sesajs-date.git"
   },
   "devDependencies": {
     "vite": "^5.3.5"

@@ -1,5 +1,6 @@
-import iepLoad from 'instrumenpoche'
+import { formatDate } from 'sesajs-date'
 
+const now = formatDate()
+console.log('formatDate ok : ', now)
 const elt = document.querySelector('#app')
-iepLoad(elt, 'https://manuel.sesamath.net/coll_docs/bibliotheque_iep/valide/scr_iep_067.xml')
-  .catch(error => console.log(error))
+elt.innerHTML = `build ok, time is ${now}`

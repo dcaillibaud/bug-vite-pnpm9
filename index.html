@@ -6,8 +6,8 @@
 </head>
 <body>
 <h1>Vite bug illustration</h1>
-<p>This is an exemple of vite crash when project contains dependencies with an url (not official npm module nor github project) is using pnpm9 to install these dependencies.<br>
-It seems ok when imported module doesn't import anything (see branch sampleOk using dependency sesajs-date on "git+https://forge.apps.education.fr/sesamath/sesajs-date.git")</p>
+<p>This is an exemple of vite crash when project contains dependencies with an url (not official npm module nor github project) is using pnpm9 to install these dependencies<br>
+The main branch show the problem, this one show that it's ok when the imported module doesn't import other http module.</p>
 <p id="app"></p>
 <script type="module" src="/main.js"></script>
 </body>
